@@ -60,7 +60,8 @@ if st.button("最適計算"):
         for i, v in enumerate(pay_var):
             if pay_var[i].value() >= 1:
                 st.write("{}円　{}枚".format(money_type[i], pay_var[i].value()))
-        st.write("お釣り詳細：")
+        change_var2 = [a.value() for a in change_var]
+        st.write("お釣り金額 = {}".format(pulp.lpDot(money_type, change_var2)))
         for i, v in enumerate(change_var):
             if change_var[i].value() >= 1:
                 st.write("{}円　{}枚".format(money_type[i], change_var[i].value()))
