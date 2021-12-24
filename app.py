@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sklearn import datasets
+import random
 
 @st.cache
 def load_data():
@@ -32,9 +33,9 @@ yen1 = st.sidebar.slider('1円玉', 0, 10, 5, 1)
 st.write('財布の中身合計：', yen10000*10000+yen5000*5000+yen1000*1000+yen500*500+yen100*100+yen50*50+yen10*10+yen5*5+yen1*1)
 st.number_input('請求金額 : ', 1, 100000, 1200)
 
+opt_payment = -1
+st.write("最適な支払い金額 = ", opt_payment)
 button_state = st.button('Say hello')
 if button_state:
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
+    random.randint(0,10000)
 
