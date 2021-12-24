@@ -9,9 +9,6 @@ def load_data():
     df['target'] = iris.target_names[iris.target]
     return df
 
-df = load_data()
-targets = list(df.target.unique())
-selected_targets = st.multiselect('select targets', targets, default=targets)
-df = df[df.target.isin(selected_targets)]
-
-st.dataframe(df)
+st.title('日常を最適化♪')
+st.header('財布の小銭最小化問題')
+st.write('文字列') # markdown
