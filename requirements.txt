@@ -93,7 +93,6 @@ ply==3.11
 prometheus-client==0.9.0
 prompt-toolkit==3.0.18
 protobuf==3.15.7
-psycopg2==2.8.6
 ptyprocess==0.7.0
 PuLP==2.4
 pyarrow==6.0.1
