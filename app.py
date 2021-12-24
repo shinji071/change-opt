@@ -34,7 +34,7 @@ yen1 = st.sidebar.slider('1円玉', 0, 10, 3, 1)
 input_price = st.number_input('お買い上げ金額 : ', 1, 1000000, 694)
 st.write('財布の中身合計(左上の矢印から変更可能です)：', yen10000*10000+yen5000*5000+yen2000*2000+yen1000*1000+yen500*500+yen100*100+yen50*50+yen10*10+yen5*5+yen1*1)
 opt_payment = -1
-st.write("最終的に財布の中の小銭・紙幣が最小となるように計算します。")
+
 #st.button('最適計算')
 
 if st.button("最適計算"):
@@ -68,3 +68,5 @@ if st.button("最適計算"):
                 st.write("{}円　{}枚".format(money_type[i], change_var[i].value()))
     else:
         st.write("最適解なし（そもそも財布の中身が足りないなど）")
+
+st.write("最終的に財布の中の小銭・紙幣数が最小となるように計算してます（小銭・紙幣は同列に扱ってます）♪")
