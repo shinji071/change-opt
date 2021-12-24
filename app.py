@@ -10,7 +10,7 @@ def load_data():
     return df
 
 def opt():
-
+    pass
 
 st.title('人生アルゴリズム')
 st.header('財布の小銭最小化問題')
