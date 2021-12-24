@@ -9,6 +9,7 @@ def load_data():
     df['target'] = iris.target_names[iris.target]
     return df
 
-st.title('日常を最適化♪')
+st.title('人生アルゴリズム')
 st.header('財布の小銭最小化問題')
-st.write('文字列') # markdown
+st.subheader('財布が軽くなるほど、心が満たされる。　　--ヴィクトル・ユーゴー')
+st.write('今回は支払い後の財布の中身の紙幣・硬貨枚数が最小になるアルゴリズムを考えてみました') # markdown
