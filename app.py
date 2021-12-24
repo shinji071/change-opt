@@ -24,5 +24,4 @@ st.sidebar.slider('10円玉', 0, 10, 5, 1)
 st.sidebar.slider('5円玉', 0, 10, 5, 1)
 st.sidebar.slider('1円玉', 0, 10, 5, 1)
 
-st.slider('10円玉', 0, 10, 5, 1)
-st.button('ラベル')
+st.sidebar.button('最適化実行')
