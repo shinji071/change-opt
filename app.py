@@ -59,7 +59,7 @@ if st.button("最適計算"):
 
     if status == 1:
         pay_var2 = [a.value() for a in pay_var]
-        st.write("最適な支払金額 = ", pulp.lpDot(money_type, pay_var2))
+        st.write("最適な支払金額 = {}".format(pulp.lpDot(money_type, pay_var2)))
         for i, v in enumerate(pay_var):
             if pay_var[i].value() >= 1:
                 st.write("{}円　{}枚".format(money_type[i], pay_var[i].value()))
