@@ -18,7 +18,6 @@ cffi==1.14.5
 chardet==4.0.0
 click==7.1.2
 cycler==0.10.0
-dealer @ file:///Users/iwakishinji/PycharmProjects/work/dealer-0.1.0-py3-none-any.whl
 decorator==4.4.2
 defusedxml==0.7.1
 docutils==0.17
@@ -126,7 +125,7 @@ streamlit==1.3.0
 tenacity==8.0.1
 terminado==0.9.3
 testpath==0.4.4
-threadpoolctl==2.1.0
+threadpoolctl==2.1.0g
 toml==0.10.2
 toolz==0.11.2
 tornado==6.1
