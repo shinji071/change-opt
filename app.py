@@ -12,7 +12,7 @@ def load_data():
     df['target'] = iris.target_names[iris.target]
     return df
 
-def button_state():
+if st.button("最適計算"):
     money_type = (10000, 5000, 2000, 1000, 500, 100, 50, 10, 5, 1)
     price = input_price
     # 商品の金額
@@ -79,7 +79,7 @@ input_price = st.number_input('請求金額 : ', 1, 100000, 1200)
 
 opt_payment = -1
 st.write("最適な支払い金額 = ", opt_payment)
-button_state = st.button('Say hello')
+button_state = st.button('最適計算')
 #if button_state:
     #random.randint(0,10000)
 
